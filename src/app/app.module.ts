@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { AddToDoComponent } from './add-to-do/add-to-do.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
-const myRoute:Routes = [{path:"",component:AddToDoComponent},
+const myRoute:Routes = [{path:"add",component:AddToDoComponent},
                         {path:"view",component:ViewAllComponent}
                        ]
 
@@ -15,7 +16,8 @@ const myRoute:Routes = [{path:"",component:AddToDoComponent},
   declarations: [
     AppComponent,
     AddToDoComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
