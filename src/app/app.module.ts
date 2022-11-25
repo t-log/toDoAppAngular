@@ -8,7 +8,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
-const myRoute:Routes = [{path:"add",component:AddToDoComponent},
+const myRoute:Routes = [{path:"",component:AddToDoComponent},
+                        {path:"add",component:AddToDoComponent},
                         {path:"view",component:ViewAllComponent}
                        ]
 
