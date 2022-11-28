@@ -7,6 +7,7 @@ import { AddToDoComponent } from './add-to-do/add-to-do.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewAllComponent } from './view-all/view-all.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes = [{path:"",component:AddToDoComponent},
                         {path:"add",component:AddToDoComponent},
@@ -24,7 +25,8 @@ const myRoute:Routes = [{path:"",component:AddToDoComponent},
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
