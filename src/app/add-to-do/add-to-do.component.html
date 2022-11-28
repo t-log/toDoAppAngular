@@ -5,23 +5,23 @@
         <div class="col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3 div col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">User Id:</label>
-                <input class = "form-control" type="text" name="" id="">
+                <input class = "form-control" type="text" name="userId" [(ngModel)]="userId" id="">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Id:</label>
-                <input class = "form-control" type="number" name="" id="">
+                <input class = "form-control" type="number" name="id" [(ngModel)]="id" id="">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Title:</label>
-                <input class = "form-control" type="text" name="" id="">
+                <input class = "form-control" type="text" name="title" [(ngModel)]="title" id="">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Completed Status:</label>
-                <input class = "form-control" type="text" name="" id="">
+                <input class = "form-control" type="text" name="completed" [(ngModel)]="completed" id="">
             </div>
             <div class="row g-3 div col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label"></label>
-                <button class="btn btn-primary">Submit</button>
+                <button (click)="add()" class="btn btn-primary">Submit</button>
             </div>
         </div>
     </div>
